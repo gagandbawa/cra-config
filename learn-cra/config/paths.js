@@ -50,6 +50,7 @@ const resolveModule = (resolveFn, filePath) => {
 
 // resolve entry points
 var appPages = require('./entryPoints');
+console.log('Gagan appPages', appPages);
 if (appPages === undefined || appPages === null || appPages.length === 0) {
 	console.log(
 		'You must define the entry points in your entryPoints.js using the parameret appPages.'
